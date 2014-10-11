@@ -8,4 +8,4 @@ We will also try to comeup with some action plan and possible design.
 This is going to be distributed implementation of [External Sorting in Java 8](https://github.com/lemire/externalsortinginjava8).
 
 ## Licence 
-This repository is released under Apache 2 license.
+This repository is released under [Apache 2 license](https://github.com/wkapil/distributedexternalsort/blob/master/LICENSE).
