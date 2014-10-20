@@ -21,6 +21,7 @@ import org.jppf.server.protocol.JPPFTask;
 
 //import com.google.code.externalsorting.ExternalSort;
 import com.google.code.externalsorting.ExternalSortCallable;
+import com.google.code.externalsorting.ExternalSortParallelStreamSort;
 
 /**
  * This class is a JPPF task.
@@ -79,8 +80,12 @@ public class SortJPPFTask extends JPPFTask
 			String[] param = new String[2];
 			param[0] = fileName;
 			param[1] = outputFileName;
+			// Compatible upto Java 7: Without multi threading
 			//ExternalSort.main(param);
+			// Compatible Java 8: With multi threading and Executor Service
 			ExternalSortCallable.main(param);
+			// Compatible Java 8: Without multi threading but with Executor Service
+			//ExternalSortParallelStreamSort.main(param);
 			
 			System.out.println("SortJPPFTask: "+name+" Total time: "+(System.currentTimeMillis()-startTime));
 			System.out.println("SortJPPFTask: "+name+" ended...");
