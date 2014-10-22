@@ -8,6 +8,7 @@ Currently this code is in development phase and will have lot of our local envir
 
 ## Credits and thanks
 This is going to be distributed implementation of [External Sorting in Java 8](https://github.com/lemire/externalsortinginjava8).
+For distributed architecture we are using [JPPF](http://www.jppf.org/), which helps to distribut the process in tasks across cluster. We preferred JPPF as it is very easy to configure and deploy without much overhead even during execution. The deployment details with configurations can be located at [JPPF link](http://www.jppf.org/doc/v4/index.php?title=Main_Page).
 
 ## Licence 
 This repository is released under [Apache 2 license](https://github.com/wkapil/distributedexternalsort/blob/master/LICENSE).
